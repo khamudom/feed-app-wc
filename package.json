@@ -1,18 +1,22 @@
 {
-  "name": "my-web-component",
+  "name": "feed-app-wc",
   "version": "1.0.0",
   "description": "This is a repo to learn FAST",
   "main": "dist/index.js",
   "type": "module",
   "private": true,
+  "watch": {
+    "test": "yarn build"
+  },
   "scripts": {
     "build": "webpack --mode=production && tsc -p tsconfig.json",
     "dev": "webpack serve",
     "prepare": "yarn build",
-    "test": "yarn build"
+    "test": "yarn build",
+    "watch": "npm-watch"
   },
   "author": {
-    "name": "Kham"
+    "name": "Kham Udom"
   },
   "homepage": "",
   "license": "MIT",
@@ -20,6 +24,7 @@
     "type": "git"
   },
   "dependencies": {
+    "@fluentui/web-components": "^2.5.6",
     "@microsoft/fast-element": "^2.0.0-beta.4",
     "tslib": "^2.4.0"
   },

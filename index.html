@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>My Web Components</title>
-</head>
+    <title>Feed App</title>
+    <style>
+      :not(:defined) {
+        visibility: hidden;
+      }
+    </style>
+  </head>
 
-<body>
-    <emoticon=feedback>Hello Emoticon Feedback Component</emoticon=feedback>
+  <body>
+    <ku-feed></ku-feed>
     <script src="www/bundle.js"></script>
-</body>
-
+  </body>
 </html>

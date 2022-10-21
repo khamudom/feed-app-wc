@@ -28,7 +28,8 @@ module.exports = function (env, { mode }) {
     },
     plugins: [
       new CleanWebpackPlugin({
-        dry: true
+        dry: true,
+        dangerouslyAllowCleanPatternsOutsideProject: true
       })
     ],
     module: {
