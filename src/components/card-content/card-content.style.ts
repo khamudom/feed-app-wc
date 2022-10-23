@@ -8,7 +8,7 @@ export const styles = css`
   }
 
   .image {
-    width: 256px;
+    width: 100%;
     height: 144px;
     background-color: #333333;
   }
